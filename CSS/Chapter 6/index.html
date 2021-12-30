@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aquamarine; 
+            height: 50vh;   
+        }
+        .box{
+            border: 2px solid black;
+            /* transform: translate(34px,34px) rotate(45deg);
+            transform-origin: 0; */
+        /* transform: scale(1);
+        transform: skew(4deg,4deg); */
+        /* transform: rotatex(45deg);
+        transform: rotatey(50deg); */
+       
+        }
+        img:hover{
+            width: 100px;
+        }
+        img{
+            width: 400px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: step-end;
+            transition-delay: 3s; */
+            transition: width 2s ease-in-out, height 4s step-start;
+        }
+       
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img id = "myimage" src="https://source.unsplash.com/user/erondu/500x300"></div>
+        <div id="btn">toggle</div>
+    </div>
+    <script>
+        btn.addEventListener("click", ()=>
+        {
+           if( myimage.style.width==='500px'){
+            myimage.style.width="146px";
+           }
+           else if( myimage.style.width="146px"){
+            myimage.style.width="500px";
+           }
+        }
+        )
+    </script>
+</body>
+</html>

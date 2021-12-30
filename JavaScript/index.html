@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Tutorial</title>
+</head>
+
+<body>
+    <h1>Welcome to the Java Script Tutorial</h1>
+    <div id="FirstContainer" class="container">
+        <button id="Click" onclick="clicked()">Click</button>
+    </div>
+    <div class="container">
+        <p>This is Paragraph</p>
+    </div>
+    <script>
+        // document.write("Hello Devina");
+        // var num1 = 45;
+        // var num2 = 45;
+        // document.write(num1+num2);
+
+        // var marks={
+        //     ravi:44,
+        //     devina:55,
+        //     pratham:55,
+        // }
+        // console.log(marks);
+
+        // a = true;
+        // b=false;
+        // document.write(a , b);
+
+        // und=undefined;
+        // n=null;
+        // document.write(und,n)
+
+        // array=[1,2,3,"String",5,6,7]; 
+        // document.write(array);
+
+        //Arithmetic Operations
+        // bobo1=5;
+        // bobo2=10;
+        // document.write("The value of bobo1 + bobo2",bobo1+bobo2);
+        // document.write("The value of bobo1 - bobo2",bobo1-bobo2);
+        // document.write("The value of bobo1 * bobo2",bobo1*bobo2);
+        // document.write("The value of bobo1 / bobo2",bobo1/bobo2);
+
+        //assignment operations
+
+        // a=bobo1;
+        // a+=2;
+        // // a-=2;
+        // // a*=2;
+        // // a/=2;
+        // console.log(a);
+
+        //comparison operations
+
+        //  x=69;
+        //  y=69;
+        //  console.log(x==y);
+        //  console.log(x>=y);
+        //  console.log(x<=y);
+        //  console.log(x>y);
+        //  console.log(x<y);
+
+        //Logical operations
+        //And operator
+        // x=5;
+        // y=10;
+        // console.log(true && true); // ----> only this will be true
+        // console.log(true && false);
+        // console.log(false && true);
+        // console.log(false && false);
+
+        // OR operations
+
+        // console.log(true || true); //It will only find one true value and it will give true
+        // console.log(true || false);
+        // console.log(false || true);
+        // console.log(false || false);
+
+        //not operations
+        // console.log(!false);
+        // console.log(!true);
+
+        // function avg(a,b)
+        // { 
+        // return (a+b)/2;
+        // }
+        // c1=avg(4,6);
+        // c2=avg(2,8);
+        // console.log(c1,c2);
+
+        //Conditionals in javascript
+
+        // age=5;
+        // if(age>18)
+        // {
+        //     console.log("You can drive");
+        // }
+        // else
+        // {
+        //     console.log("You cannot drive");
+        // }
+
+        //if-else if ladder
+
+        //age=10;
+        // if(age>18)
+        // {
+        //     console.log("You can drive");
+        // }
+        // else if(age>12)
+        // {
+        //     console.log("You are young, you cant drive");
+        // }
+        // else{
+        //     console.log("You can do whatever you want");
+        // }
+
+        // function age(a)
+        // {
+        //          if(a >= 18){
+        //         console.log("you can drink");
+        //          }
+        //         else{
+        //         console.log("you can't drink");
+        //      }
+        //   return(a);
+        // }
+        // Age = age(25);
+        // console.log(age);
+
+        //for loop
+        // arr = [1,2,3,4,5,6];
+        // console.log(arr);
+        // for(i=0;i<arr.length;i++)
+        // {
+        // console.log(arr[i]);
+        // }
+
+        //for-each-loop
+
+        // arr = [1,2,3,4,5,6];
+        // arr.forEach(function(element)
+        //     {
+        //         console.log(element);
+        //     }
+        // )
+
+        //While loop
+        // arr = [1,2,3,4,5,6];
+        // let j=0;
+        // while(j < arr.length){
+        //     console.log(arr[j]);
+        //     j++;
+        // }
+
+        //Do-While loop
+        // arr = [1, 2, 3, 4, 5, 6, 7];
+        // let j = 0;
+        // do {
+        //     console.log(arr[j]);
+        //     j++;
+        // }
+        // while (j < arr.length);
+
+       // Break And Continue
+            arr = [1, 2, 3, 4, 5, 6, 7];
+            for(i=0;i<arr.length;i++){
+                if(i==2)
+            {
+               // continue;
+               break;
+            }
+            document.write(arr[i])
+        }
+        // arr = ["Fan", "Camera", "Ball", 34, null,true];
+        // console.log(arr.length);
+
+        // arr.pop(); //removes last element
+        // arr.push("Fan"); //can push a string into array in last element
+        // arr.shift(); //removes first element
+        // console.log(arr.unshift("Harry"));  //can push a string into array in first element with length
+        // // console.log(arr);
+
+        //sorting 
+        // arr = [1, 4, 2, 8, 10];
+        // console.log(arr.sort());
+
+        //String Methods in JavaScript
+        // dog="what the dog dog doing";
+        // console.log(dog.length);
+        // console.log(dog.indexOf("the"));
+        // console.log(dog.lastIndexOf("the")); 
+        // console.log(dog.slice(1,4));
+        // d=dog.replace("what", "Hello")
+        // console.log(d,dog)
+
+        // mydate=new Date();
+        // console.log(mydate.getFullYear(),mydate.getMonth(),mydate.getSeconds())
+
+        // sel = document.querySelector('.container') //Gives First Class
+        // console.log(sel);
+        // sel = document.querySelectorAll('.container') //Gives All Class
+        // console.log(sel);
+
+        // function clicked() 
+        // {
+        //     console.log("This Button was clicked")
+        // }
+        // window.onload=function(){
+        //     console.log("The document was loaded")
+        // }
+
+        //Events in JavaScript
+
+        // FirstContainer.addEventListener('click',function(){
+        //     document.querySelectorAll('.container')[1].innerHTML="<b> We have Clicked</b>"
+        //     console.log("Clicked on container")
+        //})
+        // FirstContainer.addEventListener('mouseover',function(){
+        //     console.log("Mouse on container")
+        // })
+        // FirstContainer.addEventListener('mouseout',function(){
+        //     console.log("Mouse out of container")
+        // })
+    //     let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
+    //     FirstContainer.addEventListener('mouseup',function(){
+    //         document.querySelectorAll('.container')[1].innerHTML=prevHTML;
+    //         console.log("Mouse up when clicked on container")
+    //     })
+    //     FirstContainer.addEventListener('mousedown',function(){
+    //         document.querySelectorAll('.container')[1].innerHTML="<b> We have Clicked</b>"
+    //         console.log("Mouse down when clicked  container")
+    //     })
+
+    //    logkaro = ()=>{
+    //     document.querySelectorAll('.container')[1].innerHTML="<b>Set Interval</b>"
+    //     console.log("I am your log")
+    //    } 
+    //    setTimeout(logkaro,2000);
+    //   setInterval(logkaro,2000);
+       //use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
+    //    obj={name:"PRATHAM",length:1,a:{this:'tha"t'}}
+    //    jso=JSON.stringify(obj);
+    //    console.log(typeof jso)
+    //    console.log(jso)
+    //    parsed=JSON.parse({"name":"harry","length":1,"a":{"this":"that"}})
+    //    console.log(parsed);
+    </script>
+</body>
+
+</html>

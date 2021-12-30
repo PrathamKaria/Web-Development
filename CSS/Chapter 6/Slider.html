@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: black;
+        width: 100vw;
+        height: 10vh;
+    }
+    .slider{
+        background-color:white;
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+    }
+    /* .box2{
+        background-color: blue;
+        width: 100vw;
+        height: 100vh; */
+    }
+    img{
+        display: block;
+        margin: auto;
+       
+    }
+    /* .img1{
+        transform: translate(8vw);
+        animation: slide1 2s 0.1s  ease-in infinite forwards;
+        
+  
+    } */
+    .img2{
+        transform: translate(0vw);
+        animation: slide2 2s 1s  ease-in infinite forwards;
+    }
+    .img3{
+        transform: translate(-8vw);
+        animation: slide3 2s 2s  ease-in infinite forwards;
+    }
+    @keyframes slide1 {
+        0%{
+            transform: translate(8vw);
+        }
+        100%{
+            transform: translate(100vw);
+        }
+    }
+
+    @keyframes slide2 {
+        0%{
+            transform: translate(0vw);
+        }
+        100%{
+            transform: translate(100vw);
+        }
+    }
+    @keyframes slide3 {
+        0%{
+            transform: translate(-8vw);
+        }
+        100%{
+            transform: translate(100vw);
+        }
+    }
+</style>
+<body>
+
+    <header></header>
+    <div class="slider">
+        <img class = "img1" src ="Reyna.jpg" alt="xxx" width="500px" height="1600px">
+        <img class = "img2" src ="klaus.png" alt="xxx" width="500px" height="1600px">
+        <img class = "img3" src ="download.jpg" alt="xxx" width="503px" height="1600px">
+    </div>
+    <div class="box2"></div>
+</body>
+
+</html>

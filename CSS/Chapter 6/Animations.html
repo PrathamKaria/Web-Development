@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+
+}
+.body{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-name: widthAnimate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: large;
+}
+img{
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-name: widthAnimate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  
+}
+@keyframes widthAnimate {
+    from {
+        width: 300px;
+    }
+    to{
+        width: 600px;
+    }
+    
+}
+</style>
+<body>
+    <div class="container">
+        <img src="klaus.png" alt="xxx" width="350px" height="400px">
+        <div class="body">This is pratham, He loves BOBO</div>
+        
+    </div>
+    
+</body>
+</html>

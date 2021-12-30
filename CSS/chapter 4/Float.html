@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color:black;
+            height: 100vh;
+            align-items: center;
+            /* align-content: center; */
+            
+        }
+        .box1{
+            background-color: blueviolet;
+            color: black;
+            height: 25vh;
+            /* width: 25vh; */
+           border: 2px solid black;
+           order: 3;
+           /* align-self: flex-end; */
+           /* flex-grow: 4; */
+           flex-shrink: 3;
+           
+        }
+        .box2{
+            background-color: cyan;
+            color: black;
+            height: 25vh;
+            /* width: 25vh; */
+            border: 2px solid black;
+            /* flex-grow: 4; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">BOX1</div>
+    <div class="box2">BOX2</div>
+    <div class="box2">BOX3</div>
+    <div class="box2">BOX4</div>
+
+</div>
+</body>
+</html>
